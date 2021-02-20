@@ -1,2 +1,18 @@
-<h1>Hello World !</h1>
-<h2>{{appTitle}}</h2>
+<h3>Application title is : {{appTitle}}</h3>
+<h4>Application description is : {{appDescription}}</h4>
+<h5><img src="{{ backgroundImgUrl }}" style="height: 400px;"></h5>
+
+<h1>3 + 5 = {{3+5}}</h1>
+
+<h2>Hi, may I have your name?</h2>
+<h2>Hi, my name is {{ getName() }}</h2>
+
+<h2>I like fruits, like </h2>
+<ul>
+    <li *ngFor="let i of fruits">
+        {{i.name}}
+    </li>
+</ul>
+
+<button [disabled]='isDisabled'>OK</button>
+<button disabled='{{ isDisabled }}'>Cancel</button>
