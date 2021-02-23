@@ -7,18 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   appTitle = 'angular 10 tutorial';
-  appDescription = 'Was this post helpful for you about the angular?';
-  backgroundImgUrl = 'assets/imgs/test.png';
+  myName = 'helen';
 
-  getName(): string {
-    return 'razr';
+  getName(params) {
+    alert(params);
   }
-
-  fruits = [
-    { id: 1, name: 'Apple' },
-    { id: 2, name: 'Orange' },
-    { id: 3, name: 'Strawberry' }
-  ]
-
-  isDisabled: boolean = true;
 }
