@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   appTitle = 'angular 10 tutorial';
-  myName = 'helen';
 
-  getName(params) {
-    alert(params);
+  myEvent(evt) {
+    console.warn(evt)
   }
+
 }

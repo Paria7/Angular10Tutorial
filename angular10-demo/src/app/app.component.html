@@ -1,2 +1,24 @@
 <h3>Application title is : {{appTitle}}</h3>
-<button (click)="getName(myName)">Get Name</button>
+<button (click)="myEvent('this is click event')">Click here</button>
+<br>
+<br>
+<!-- <input type="text" #box (keydown)="myEvent(box.value)"> -->
+<!-- <br>
+<br>
+<p>key up with enter</p> -->
+<!-- <input type="text" #box (keyup.enter)="myEvent(box.value)"> -->
+
+<!-- <br>
+<br>
+<p>key up with space</p>
+<input type="text" #box (keyup.space)="myEvent(box.value)">
+
+<br>
+<br>
+<p>blur event</p>
+<input type="text" #box (blur)="myEvent('blur event')"> -->
+
+<h1 (mouseover)="myEvent('mouse event')" style="background-color: skyblue;">mouse event testing</h1>
+<br>
+<br>
+<h1 (mouseleave)="myEvent('mouse leave event')" style="background-color: green;">mouse leave event testing</h1>
